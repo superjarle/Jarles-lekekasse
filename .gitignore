@@ -1,4 +1,6 @@
-
+*.csv
+*.xls
+*.xlxs
 *.db
 *.feather
 *.gz
