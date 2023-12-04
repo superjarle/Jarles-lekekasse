@@ -26,11 +26,12 @@ def calculate_points(scratchcard_lines):
 
     return total_points
 
-# Part 2
-total_points = calculate_points(scratchcard_data)
-total_points
 
-def count_total_scratchcards_optimized(scratchcard_lines):
+sol1 = calculate_points(scratchcard_data)
+sol1
+# Part 2
+
+def count_total_p2(scratchcard_lines):
     cards = []
     for line in scratchcard_lines:
         # Splitting the line to separate winning numbers from player's numbers
@@ -54,6 +55,6 @@ def count_total_scratchcards_optimized(scratchcard_lines):
 
     return sum(card_copies.values())
 
-# Calculating the total number of scratchcards, including originals and copies, in an optimized way
-total_scratchcards_optimized = count_total_scratchcards_optimized(scratchcard_data)
-total_scratchcards_optimized
+# Solution P2
+sol2 = count_total_p2(scratchcard_data)
+sol2
